@@ -4,103 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Tanini</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Menu Button (Hamburger) -->
-    <nav class="menu">
-        <button class="menu-btn">☰</button>
-        <ul class="menu-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#restaurants">Restaurants</a></li>
-            <li><a href="#grocery-stores">Grocery Stores</a></li>
-            <li><a href="#lodging">Lodging</a></li>
-            <li><a href="#entertainment">Entertainment</a></li>
-            <li><a href="#sightseeing">Sightseeing</a></li>
-            <li><a href="#transportation">Transportation</a></li>
-            <li><a href="#ground-transportation">Ground Transportation</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#booking">Booking</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#grocery-stores">Grocery Stores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lodging">Lodging</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#entertainment">Entertainment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sightseeing">Sightseeing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#transportation">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ground-transportation">Ground Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to Tanini</h1>
-        <h2>The Pacific Paradise Dream</h2>
-        <button class="cta-btn">Book Now</button>
+    <!-- Header -->
+    <header class="text-center py-5">
+        <h1 class="display-4">Welcome to Tanini</h1>
+        <h2 class="lead">The Pacific Paradise Dream</h2>
+        <button class="btn btn-primary mt-3">Book Now</button>
     </header>
 
-    <!-- Round Button Grid -->
-    <section class="button-grid">
-        <div class="row">
-            <a href="#about" class="round-btn"><img src="about.jpg" alt="About"></a>
-            <a href="#restaurants" class="round-btn"><img src="restaurants.jpg" alt="Restaurants"></a>
-            <a href="#grocery-stores" class="round-btn"><img src="grocery.jpg" alt="Grocery Stores"></a>
-            <a href="#lodging" class="round-btn"><img src="lodging.jpg" alt="Lodging"></a>
-            <a href="#entertainment" class="round-btn"><img src="entertainment.jpg" alt="Entertainment"></a>
+    <!-- Button Grid -->
+    <section class="container py-4">
+        <div class="row row-cols-5 g-3 justify-content-center">
+            <div class="col"><a href="#about" class="round-btn"><img src="about.jpg" alt="About" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#restaurants" class="round-btn"><img src="restaurants.jpg" alt="Restaurants" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#grocery-stores" class="round-btn"><img src="grocery.jpg" alt="Grocery Stores" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#lodging" class="round-btn"><img src="lodging.jpg" alt="Lodging" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#entertainment" class="round-btn"><img src="entertainment.jpg" alt="Entertainment" class="img-fluid rounded-circle"></a></div>
         </div>
-        <div class="row">
-            <a href="#sightseeing" class="round-btn"><img src="sightseeing.jpg" alt="Sightseeing"></a>
-            <a href="#transportation" class="round-btn"><img src="transport.jpg" alt="Transportation"></a>
-            <a href="#ground-transportation" class="round-btn"><img src="ground.jpg" alt="Ground Transportation"></a>
-            <a href="#faq" class="round-btn"><img src="faq.jpg" alt="FAQ"></a>
-            <a href="#reviews" class="round-btn"><img src="reviews.jpg" alt="Reviews"></a>
-        </div>
-    </section>
-
-    <!-- Sections (Alternating Layout) -->
-    <section id="about" class="content-section left-img">
-        <img src="about-main.jpg" alt="About Tanini" class="main-img">
-        <div class="text">
-            <h3>About</h3>
-            <p>Discover the beauty of Tanini, a hidden gem in the Pacific.</p>
-        </div>
-        <div class="small-imgs">
-            <img src="about1.jpg" alt="Detail 1"><img src="about2.jpg" alt="Detail 2">
-            <img src="about3.jpg" alt="Detail 3"><img src="about4.jpg" alt="Detail 4">
-            <img src="about5.jpg" alt="Detail 5">
+        <div class="row row-cols-5 g-3 justify-content-center mt-3">
+            <div class="col"><a href="#sightseeing" class="round-btn"><img src="sightseeing.jpg" alt="Sightseeing" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#transportation" class="round-btn"><img src="transport.jpg" alt="Transportation" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#ground-transportation" class="round-btn"><img src="ground.jpg" alt="Ground Transportation" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#faq" class="round-btn"><img src="faq.jpg" alt="FAQ" class="img-fluid rounded-circle"></a></div>
+            <div class="col"><a href="#reviews" class="round-btn"><img src="reviews.jpg" alt="Reviews" class="img-fluid rounded-circle"></a></div>
         </div>
     </section>
 
-    <section id="restaurants" class="content-section right-img">
-        <div class="text">
-            <h3>Restaurants</h3>
-            <p>Savor local and international cuisine by the sea.</p>
+    <!-- Content Sections (Alternating Layout) -->
+    <section id="about" class="container py-4 bg-light bg-opacity-50">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6"><img src="about-main.jpg" alt="About Tanini" class="img-fluid"></div>
+            <div class="col-12 col-md-6 p-3">
+                <h3>About</h3>
+                <p>Discover the beauty of Tanini, a hidden gem in the Pacific.</p>
+            </div>
         </div>
-        <img src="restaurants-main.jpg" alt="Restaurants" class="main-img">
-        <div class="small-imgs">
-            <img src="rest1.jpg" alt="Dish 1"><img src="rest2.jpg" alt="Dish 2">
-            <img src="rest3.jpg" alt="Dish 3"><img src="rest4.jpg" alt="Dish 4">
-            <img src="rest5.jpg" alt="Dish 5">
+        <div class="row g-2 mt-3">
+            <div class="col"><img src="about1.jpg" alt="Detail 1" class="img-fluid"></div>
+            <div class="col"><img src="about2.jpg" alt="Detail 2" class="img-fluid"></div>
+            <div class="col"><img src="about3.jpg" alt="Detail 3" class="img-fluid"></div>
+            <div class="col"><img src="about4.jpg" alt="Detail 4" class="img-fluid"></div>
+            <div class="col"><img src="about5.jpg" alt="Detail 5" class="img-fluid"></div>
         </div>
     </section>
 
-    <!-- Repeat similar structure for other sections: grocery-stores, lodging, etc. -->
-
-    <section id="reviews" class="content-section left-img">
-        <img src="reviews-main.jpg" alt="Reviews" class="main-img">
-        <div class="text">
-            <h3>Reviews</h3>
-            <p>Hear what our visitors say about Tanini!</p>
+    <section id="restaurants" class="container py-4 bg-light bg-opacity-50">
+        <div class="row align-items-center flex-md-row-reverse">
+            <div class="col-12 col-md-6"><img src="restaurants-main.jpg" alt="Restaurants" class="img-fluid"></div>
+            <div class="col-12 col-md-6 p-3">
+                <h3>Restaurants</h3>
+                <p>Savor local and international cuisine by the sea.</p>
+            </div>
         </div>
-        <div class="small-imgs">
-            <img src="rev1.jpg" alt="Review 1"><img src="rev2.jpg" alt="Review 2">
-            <img src="rev3.jpg" alt="Review 3"><img src="rev4.jpg" alt="Review 4">
-            <img src="rev5.jpg" alt="Review 5">
+        <div class="row g-2 mt-3">
+            <div class="col"><img src="rest1.jpg" alt="Dish 1" class="img-fluid"></div>
+            <div class="col"><img src="rest2.jpg" alt="Dish 2" class="img-fluid"></div>
+            <div class="col"><img src="rest3.jpg" alt="Dish 3" class="img-fluid"></div>
+            <div class="col"><img src="rest4.jpg" alt="Dish 4" class="img-fluid"></div>
+            <div class="col"><img src="rest5.jpg" alt="Dish 5" class="img-fluid"></div>
+        </div>
+    </section>
+
+    <!-- Repeat for other sections (omitted for brevity, follow the alternating pattern) -->
+
+    <section id="reviews" class="container py-4 bg-light bg-opacity-50">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6"><img src="reviews-main.jpg" alt="Reviews" class="img-fluid"></div>
+            <div class="col-12 col-md-6 p-3">
+                <h3>Reviews</h3>
+                <p>Hear what our visitors say about Tanini!</p>
+            </div>
+        </div>
+        <div class="row g-2 mt-3">
+            <div class="col"><img src="rev1.jpg" alt="Review 1" class="img-fluid"></div>
+            <div class="col"><img src="rev2.jpg" alt="Review 2" class="img-fluid"></div>
+            <div class="col"><img src="rev3.jpg" alt="Review 3" class="img-fluid"></div>
+            <div class="col"><img src="rev4.jpg" alt="Review 4" class="img-fluid"></div>
+            <div class="col"><img src="rev5.jpg" alt="Review 5" class="img-fluid"></div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Tanini. All rights reserved.</p>
+    <footer class="text-center py-3">
+        <p class="m-0">© 2025 Tanini. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.querySelector('.menu-btn').addEventListener('click', () => {
-            document.querySelector('.menu-list').classList.toggle('show');
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
