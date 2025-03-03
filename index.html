@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tanini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Button (Hamburger) -->
+    <nav class="menu">
+        <button class="menu-btn">☰</button>
+        <ul class="menu-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#grocery-stores">Grocery Stores</a></li>
+            <li><a href="#lodging">Lodging</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+            <li><a href="#sightseeing">Sightseeing</a></li>
+            <li><a href="#transportation">Transportation</a></li>
+            <li><a href="#ground-transportation">Ground Transportation</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Tanini</h1>
+        <h2>The Pacific Paradise Dream</h2>
+        <button class="cta-btn">Book Now</button>
+    </header>
+
+    <!-- Round Button Grid -->
+    <section class="button-grid">
+        <div class="row">
+            <a href="#about" class="round-btn"><img src="about.jpg" alt="About"></a>
+            <a href="#restaurants" class="round-btn"><img src="restaurants.jpg" alt="Restaurants"></a>
+            <a href="#grocery-stores" class="round-btn"><img src="grocery.jpg" alt="Grocery Stores"></a>
+            <a href="#lodging" class="round-btn"><img src="lodging.jpg" alt="Lodging"></a>
+            <a href="#entertainment" class="round-btn"><img src="entertainment.jpg" alt="Entertainment"></a>
+        </div>
+        <div class="row">
+            <a href="#sightseeing" class="round-btn"><img src="sightseeing.jpg" alt="Sightseeing"></a>
+            <a href="#transportation" class="round-btn"><img src="transport.jpg" alt="Transportation"></a>
+            <a href="#ground-transportation" class="round-btn"><img src="ground.jpg" alt="Ground Transportation"></a>
+            <a href="#faq" class="round-btn"><img src="faq.jpg" alt="FAQ"></a>
+            <a href="#reviews" class="round-btn"><img src="reviews.jpg" alt="Reviews"></a>
+        </div>
+    </section>
+
+    <!-- Sections (Alternating Layout) -->
+    <section id="about" class="content-section left-img">
+        <img src="about-main.jpg" alt="About Tanini" class="main-img">
+        <div class="text">
+            <h3>About</h3>
+            <p>Discover the beauty of Tanini, a hidden gem in the Pacific.</p>
+        </div>
+        <div class="small-imgs">
+            <img src="about1.jpg" alt="Detail 1"><img src="about2.jpg" alt="Detail 2">
+            <img src="about3.jpg" alt="Detail 3"><img src="about4.jpg" alt="Detail 4">
+            <img src="about5.jpg" alt="Detail 5">
+        </div>
+    </section>
+
+    <section id="restaurants" class="content-section right-img">
+        <div class="text">
+            <h3>Restaurants</h3>
+            <p>Savor local and international cuisine by the sea.</p>
+        </div>
+        <img src="restaurants-main.jpg" alt="Restaurants" class="main-img">
+        <div class="small-imgs">
+            <img src="rest1.jpg" alt="Dish 1"><img src="rest2.jpg" alt="Dish 2">
+            <img src="rest3.jpg" alt="Dish 3"><img src="rest4.jpg" alt="Dish 4">
+            <img src="rest5.jpg" alt="Dish 5">
+        </div>
+    </section>
+
+    <!-- Repeat similar structure for other sections: grocery-stores, lodging, etc. -->
+
+    <section id="reviews" class="content-section left-img">
+        <img src="reviews-main.jpg" alt="Reviews" class="main-img">
+        <div class="text">
+            <h3>Reviews</h3>
+            <p>Hear what our visitors say about Tanini!</p>
+        </div>
+        <div class="small-imgs">
+            <img src="rev1.jpg" alt="Review 1"><img src="rev2.jpg" alt="Review 2">
+            <img src="rev3.jpg" alt="Review 3"><img src="rev4.jpg" alt="Review 4">
+            <img src="rev5.jpg" alt="Review 5">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tanini. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.menu-list').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

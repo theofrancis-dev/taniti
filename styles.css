@@ -1,0 +1,132 @@
+/* Root Variables for Colors */
+:root {
+    --rich-black: #001021ff;
+    --midnight-green: #034748ff;
+    --blue-ncs: #1481baff;
+    --aero: #11b5e4ff;
+    --process-cyan: #0caadcff;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('ocean-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: var(--rich-black);
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--aero);
+    cursor: pointer;
+}
+.menu-list {
+    display: none;
+    list-style: none;
+    background: var(--midnight-green);
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.menu-list.show {
+    display: block;
+}
+.menu-list li a {
+    color: var(--process-cyan);
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+h1 {
+    color: var(--blue-ncs);
+    margin: 0;
+}
+h2 {
+    color: var(--midnight-green);
+    margin: 10px 0;
+}
+.cta-btn {
+    background: var(--aero);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button Grid */
+.button-grid {
+    padding: 20px;
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.round-btn img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+.main-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+.text {
+    padding: 10px;
+}
+.small-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.small-imgs img {
+    width: 18%;
+    height: auto;
+}
+.left-img .main-img { order: 1; }
+.left-img .text { order: 2; }
+.right-img .main-img { order: 2; }
+.right-img .text { order: 1; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--rich-black);
+    color: white;
+}
+
+body {
+    background: url('./background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
