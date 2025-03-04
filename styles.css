@@ -1,16 +1,21 @@
 /* Root Variables */
 :root {
-    --rich-black: #001021ff;
+    --rich-black: #001021ff;    
+    --midnight-green-1: #cefcfd;
+    --midnight-green-2 : #6cf7f9;
+    --midnight-green-3 : #0af1f5;
+    --midnight-green-4 : #023031;
     --midnight-green: #034748ff;
+
+
     --blue-ncs: #1481baff;
     --aero: #11b5e4ff;
     --process-cyan: #0caadcomegal;
 }
 
 body {
-    background: url('your-ocean-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    backdrop-filter: blur(5px);
+    background: url('./img/background.jpg') no-repeat center center fixed;
+    background-size: cover;    
     color: var(--rich-black);
     font-family: Arial, sans-serif;
 }
@@ -26,10 +31,13 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(17, 181, 228, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-collapse {
-    background: var(--midnight-green);
+    background: var(--midnight-green-4);
+    padding-left: 10px;
+    border-radius: 10px;
+    
 }
 .nav-link {
-    color: var(--process-cyan) !important;
+    color: var(--midnight-green-1) !important;
 }
 .nav-link:hover {
     color: var(--aero) !important;
@@ -73,3 +81,40 @@ footer {
     background: var(--rich-black);
     color: white;
 }
+
+/*modal view*/
+.clickable-img {
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+    border-color: var(--aero);
+    border-style: solid;
+  }
+  
+  .clickable-img:hover {
+    opacity: 0.8;
+  }
+  
+  .modal-content {
+    background: var(--midnight-green);
+    color: var(--midnight-green-1);
+  }
+  
+  .modal-footer {
+    background: var(--rich-black);
+  }
+
+  .material-icons {
+    color: var(--midnight-green); 
+    font-size: 28px; /* Adjust size if needed */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .material-icons:hover {
+    color: var(--process-cyan); /* Slightly brighter on hover */
+  }
+  
+  .align-middle {
+    vertical-align: middle; /* Keeps it inline with text */
+  }
