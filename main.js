@@ -18,3 +18,14 @@
   });
 
 
+  photo_sources = {
+    "photo" : {
+      "author" : "Julien",
+      "url"    : "https://www.pexels.com/photo/nighttime-view-of-lawson-convenience-store-30037323/"
+    },
+    "photo" : {
+      
+    }
+    
+  }
+
