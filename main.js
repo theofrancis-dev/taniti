@@ -18,6 +18,12 @@
   });
 
 
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      document.getElementById("desktop-notice").style.display = "block";
+  }
+}, false);
+
   photo_sources = {
     "photo" : {
       "author" : "Julien",
@@ -35,7 +41,5 @@
   }
 
 
-  Photo by <a target="_blank" href=>Olichel</a> from <a target="_blank" href="https://freerangestock.com">Freerange Stock</a>
-  Massachusetts Office Of Travel & Tourism, https://www.flickr.com/photos/masstravel/29796992180
 
   
