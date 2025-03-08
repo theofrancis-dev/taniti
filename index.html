@@ -74,13 +74,15 @@
     <header class="text-center py-5">
       <h1 class="display-4">Welcome to Tanini</h1>
       <h2 class="lead">The Pacific Paradise Dream</h2>
-      <button class="btn btn-primary mt-3">Book Now</button>
+      <button class="btn btn-primary mt-3" onclick="showBooking()">Book Now</button>
     </header>
     
     <!--desktop warning-->
     <!-- Desktop warning alert using Bootstrap -->
     <div id="desktop-notice" class="alert alert-warning alert-dismissible fade show" role="alert">
-      This site is designed for mobile. For the best experience, view it on your phone!
+      This site is designed for mobile.
+      <br>
+       For the best experience, view it on your phone!
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
@@ -171,6 +173,70 @@
         </div>
       </div>
     </section>
+
+        <!-- Booking -->
+        <section id="booking" class="container py-4 bg-light bg-opacity-50">
+          <div class="row align-items-center">
+            <h3 class="text-center">Flight with Taniti Airline</h3>
+            <div class="col-12 col-md-12">
+              <img src="./img/taniti-airlines.jpg" alt="Taniti Airlines" class="img-fluid" />
+            </div>
+            <div class="col-12 col-md-12 p-3">
+              <form id="flightForm">
+
+              <div class="form-group row">
+                <label for="flightFrom" class="col-sm-3 col-form-label">Flight From</label>
+                <div class="col-sm-9">
+                  <select class="form-select" id="flightFrom" name="flightFrom">
+                      <option value="newyork">New York</option>
+                      <option value="miami">Miami</option>
+                      <option value="madrid">Madrid</option>
+                      <option value="rio">Rio de Janeiro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="fromDate" class="col-sm-3 col-form-label">From Date</label>
+                <div class="col-sm-9">
+                  <input type="date" class="form-control" id="fromDate" name="fromDate">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="toDate" class="col-sm-3 col-form-label">To Date</label>
+                <div class="col-sm-9">
+                  <input type="date" class="form-control" id="toDate" name="toDate">
+                </div>
+              </div>                
+        
+              <div class="form-group row">
+                <label for="travelers" class="col-sm-3 col-form-label">Travelers</label>
+                <div class="col-sm-9">
+                  <select class="form-select" id="travelers" name="travelers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+              </div>
+              </div>               
+                    
+              <div class="mb-3">
+                  <button type="button" class="btn btn-primary" onclick="fakeReserve()">Reserve</button>
+              </div>
+        
+              <div class="form-group row">
+                <label class="col-sm-10 col-form-label price-label text-center">Total Price: <span id="totalPrice"></span></label>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-primary w-100" onclick="closeBooking()">Close</button>
+                </div>
+            </div>
+         
+            </div>
+          </div>
+          
+        </section>
 
     <!-- About -->
     <section id="about" class="container py-4 bg-light bg-opacity-50">
@@ -530,19 +596,19 @@
       </div>
       <div class="row g-2 mt-3">
         <div class="col">
-          <img src="./img/reviews1.jpg" alt="Review 1" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Restaurants" />
+          <img src="./img/reviews1.jpg" alt="Review 1" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Beautiful Park!" />
         </div>
         <div class="col">
-          <img src="./img/reviews2.jpg" alt="Review 2" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Restaurants" />
+          <img src="./img/reviews2.jpg" alt="Review 2" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Kids love playing." />
         </div>
         <div class="col">
-          <img src="./img/reviews3.jpg" alt="Review 3" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Restaurants" />
+          <img src="./img/reviews3.jpg" alt="Review 3" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Great for fishing." />
         </div>
         <div class="col">
-          <img src="./img/reviews4.jpg" alt="Review 4" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Restaurants" />
+          <img src="./img/reviews4.jpg" alt="Review 4" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Museum" />
         </div>
         <div class="col">
-          <img src="./img/reviews5.jpg" alt="Review 5" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Restaurants" />
+          <img src="./img/reviews5.jpg" alt="Review 5" class="img-fluid clickable-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-name="Old Fortress" />
         </div>
       </div>
     </section>
@@ -589,14 +655,17 @@
       <div class="row references">
         <div class="col md-6">        
           <h6>references:</h6>
-          <ul>
-          <li><a href="https://commons.wikimedia.org/wiki/File:Vegetables_in_supermarket.jpg" target="_blank">Tiia Monto</a></li>
-          <li><a href="https://commons.wikimedia.org/wiki/File:Supermarket_shelves.jpg" target="_blank">Frankie Fouganthin</a></li>      
-          <li><a href="https://www.flickr.com/photos/fotograzio/20262960392/in/photostream/" target="_blank"> Wayne S. Grazio</a></li>
+          <ul class="ref-list">
+          <li><a href="https://commons.wikimedia.org/wiki/File:Vegetables_in_supermarket.jpg" target="_blank">Photo by Tiia Monto</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Supermarket_shelves.jpg" target="_blank">Photo by Frankie Fouganthin</a></li>      
+          <li><a href="https://www.flickr.com/photos/fotograzio/20234745832/" target="_blank">Photo by Wayne S. Grazio</a></li>
           <li><a href="https://www.flaticon.com/free-icons/faq" title="faq icons" target="_blank">Faq icons created by Freepik - Flaticon</a></li>
-          <li><a href="https://www.flickr.com/photos/masstravel/29796992180"  target="_blank">Massachusetts Office Of Travel & Tourism</a></li>
+          <li><a href="https://www.flickr.com/photos/masstravel/29796992180"  target="_blank">Photo by Massachusetts Office Of Travel & Tourism</a></li>            
+          <li><a href="https://www.pexels.com/photo/nighttime-view-of-lawson-convenience-store-30037323/" target="_blank">Photo by Julien</a></li>                   
+          <li><a href="https://freerangestock.com/photographer/Olichel/4574" target="_blank">Photo by Olichel</a></li>
           </ul>
         </div>
+
         <div class="col md-6">      
           <a href="mailto:aiquilibrium@protn.me?subject=Taniti App. Question" target="_blank">
             <h6 class="contact-us">contact us</h6>

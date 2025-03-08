@@ -24,21 +24,38 @@
   }
 }, false);
 
-  photo_sources = {
-    "photo" : {
-      "author" : "Julien",
-      "url"    : "https://www.pexels.com/photo/nighttime-view-of-lawson-convenience-store-30037323/"
-    },
-    "photo" : {
-      "author": "Joel Abroad",
-      "url": "https://www.flickr.com/photos/40295335@N00/4144789522"
-    },
-    "photo" : {
-      "author": "Olichel",
-      "url": "https://freerangestock.com/photographer/Olichel/4574"
-    }
-    
+function fakeReserve() {
+  const flightFrom = document.getElementById('flightFrom').value;
+  const travelers = document.getElementById('travelers').value;
+  let price;
+  
+  switch(flightFrom) {
+      case 'newyork':
+          price = 599 * travelers;
+          document.getElementById('totalPrice').textContent = `$${price} Reservation ID: 140646. Paid at the Counter.`;
+          break;
+      case 'miami':
+          price = 399 * travelers;
+          document.getElementById('totalPrice').textContent = `$${price} Reservation ID: 140646. Paid at the Counter.`;
+          break;
+      case 'madrid':
+          price = 699 * travelers;
+          document.getElementById('totalPrice').textContent = `€${price} Reservation ID: 140646. Paid at the Counter.`;
+          break;
+      case 'rio':
+          price = 10000 * travelers;
+          document.getElementById('totalPrice').textContent = `R$${price} Reservation ID: 140646. Paid at the Counter.`;
+          break;
   }
+}
+
+function closeBooking () {
+  document.getElementById('booking').style.display='none';
+}
+
+function showBooking(){
+  document.getElementById('booking').style.display='block';
+}
 
 
 

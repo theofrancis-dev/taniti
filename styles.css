@@ -128,8 +128,9 @@ footer {
     padding: 10px;
     position: fixed;
     top: 100px;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
 }
 
 .references {
@@ -152,4 +153,21 @@ footer {
 .references + ul a:hover {
     color: var(--midnight-green-1);
     text-decoration: underline; /* Underline on hover */
+}
+
+.price-label {
+    background-color: var(--midnight-green);
+    color: var(--midnight-green-1);
+}
+
+.price-container > label {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+
+.ref-list a {
+    font-size: xx-small;
 }
