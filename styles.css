@@ -133,6 +133,10 @@ footer {
     text-align: center;
 }
 
+#booking {
+    display: none;
+}
+
 .references {
     color : var(--midnight-green-1);
     font-size: smaller;
