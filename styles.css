@@ -171,3 +171,20 @@ footer {
 .ref-list a {
     font-size: xx-small;
 }
+
+.faq h5 {
+    color: #2c3e50;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.faq p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
