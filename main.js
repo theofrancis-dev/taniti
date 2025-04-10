@@ -55,8 +55,11 @@ function closeBooking () {
 
 function showBooking(){
   document.getElementById('booking').style.display='block';
+  closeNavMenu();
 }
 
-
+function closeNavMenu(){
+  document.getElementById('navbarNav').style.display='none';
+}
 
   
